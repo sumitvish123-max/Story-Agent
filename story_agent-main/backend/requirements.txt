@@ -1,0 +1,17 @@
+# Python packages required for the Story Writer backend
+# Install all with:  pip install -r requirements.txt
+
+# ── Web framework ─────────────────────────────────────────
+fastapi          # the web framework (replaces flask)
+uvicorn[standard] # ASGI server that runs FastAPI (replaces flask's built-in server)
+                  # [standard] includes websocket support + faster performance
+
+# ── Request validation ────────────────────────────────────
+pydantic         # data validation — comes with FastAPI, listed for clarity
+
+# ── AI model clients ──────────────────────────────────────
+google-generativeai  # Google Gemini API
+requests             # HTTP client for Ollama local API calls
+
+# ── Config / environment ──────────────────────────────────
+python-dotenv    # reads .env file into os.environ
